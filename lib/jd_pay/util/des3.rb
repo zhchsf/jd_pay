@@ -26,7 +26,7 @@ module JdPay
         decrypt_bytes = res.bytes
 
         bytes_length = bytes_to_int(decrypt_bytes[0, 4])
-        decrypt_bytes[4, 4 + bytes_length].map(&:chr).join
+        decrypt_bytes[4, bytes_length].map(&:chr).join
       end
 
       # 对要加密的字符串按照京东的规则处理
