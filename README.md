@@ -22,10 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-暂时只添加了一个加密方法，其它TODO
+暂时只添加了加密／解密方法，其它TODO
 
 ```ruby
 JdPay::Util::Des3.encrypt("string", "base64_key_string")
+JdPay::Util::Des3.decrypt("string", "base64_key_string")
 ```
 
 ## Development
